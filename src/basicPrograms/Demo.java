@@ -6,6 +6,8 @@ public class Demo {
 		// TODO Auto-generated method stub
 
 		System.out.println("Java very interesting programming language");
+		
+		System.out.println("Java so powerfull programming language");
 	}
 
 }
