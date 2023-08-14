@@ -8,6 +8,9 @@ public class Demo {
 		System.out.println("Java very interesting programming language");
 		
 		System.out.println("Java so powerfull programming language");
+		System.out.println("Java so powerfull programming language");
+		System.out.println("Java so powerfull programming language");
+		System.out.println("Java so powerfull programming language");
 	}
 
 }
