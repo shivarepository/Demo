@@ -12,6 +12,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import rahulshettyacademy.pageobjects.CartPage;
+import rahulshettyacademy.pageobjects.OrdersPage;
 
 public class AbstractComponent {
 	
@@ -24,10 +25,19 @@ public class AbstractComponent {
 	@FindBy(css="[routerlink*=cart]")
 	WebElement cartHeader;
 	
+	@FindBy(css="[routerlink*= myorders]")
+	WebElement orderHeader;
+	
 	public void waitForElementToAppear(By findBy)
 	{
 	    WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
-	    wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".mb-3")));
+	    wait.until(ExpectedConditions.visibilityOfElementLocated(findBy));
+	}
+	
+	public void waitForWebElementToAppear(WebElement ele)
+	{
+	    WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
+	    wait.until(ExpectedConditions.visibilityOf(ele));
 	}
 	
 	public void waitForElementToDisAppear(WebElement ele)
@@ -42,7 +52,13 @@ public class AbstractComponent {
 		return new CartPage(driver);
 	}
 	
-	public Timeouts implicitWaitCall()
+	public OrdersPage gotoOrdersPage()
+	{
+		orderHeader.click();
+		return new OrdersPage(driver);
+	}
+	
+	public  Timeouts implicitWaitCall()
 	{
 		return driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	}

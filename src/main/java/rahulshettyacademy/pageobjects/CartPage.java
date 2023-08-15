@@ -23,7 +23,7 @@ public class CartPage extends AbstractComponent{
 		this.driver = driver;
 	}
 	
-	public boolean VerifyProductDisplay(String productName) 
+	public Boolean VerifyProductDisplay(String productName) 
 	{
 		Boolean match = cartProducts.stream().anyMatch(cartProduct->cartProduct.getText().equalsIgnoreCase(productName));
 		return match;
