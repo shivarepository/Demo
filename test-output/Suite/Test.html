@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>TestNG:  Error Validation Test</title>
+<title>TestNG:  Test</title>
 <link href="../testng.css" rel="stylesheet" type="text/css" />
 <link href="../my-testng.css" rel="stylesheet" type="text/css" />
 
@@ -53,13 +53,13 @@ function toggleAllBoxes() {
 
 </head>
 <body>
-<h2 align='center'>Error Validation Test</h2><table border='1' align="center">
+<h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/1</td>
+<td>Tests passed/Failed/Skipped:</td><td>3/1/1</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Aug 18 17:04:08 IST 2023</td>
+<td>Started on:</td><td>Wed Aug 23 23:43:11 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>17 seconds (17542 ms)</td>
+<tr><td>Total time:</td><td>117 seconds (117285 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -78,12 +78,8 @@ function toggleAllBoxes() {
 <td title='testPrograms.ErrorValidationsTest.LoginApplication()'><b>LoginApplication</b><br>Test class: testPrograms.ErrorValidationsTest</td>
 <td><div><pre>java.lang.AssertionError: null
 	at testPrograms.ErrorValidationsTest.LoginApplication(ErrorValidationsTest.java:21)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2024803525", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2024803525'><pre>java.lang.AssertionError: null
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace17680342", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace17680342'><pre>java.lang.AssertionError: null
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.assertNotEquals(Assert.java:1157)
 	at org.testng.Assert.assertNotEquals(Assert.java:1162)
@@ -101,16 +97,44 @@ function toggleAllBoxes() {
 	at org.testng.TestRunner.privateRun(TestRunner.java:648)
 	at org.testng.TestRunner.run(TestRunner.java:505)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
+<td>0</td>
+<td>testPrograms.ErrorValidationsTest@5f354bcf</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testPrograms.SubmitOrderTest.orderHistoryTest()'><b>orderHistoryTest</b><br>Test class: testPrograms.SubmitOrderTest</td>
+<td></td>
 <td>1</td>
-<td>testPrograms.ErrorValidationsTest@c260bdc</td></tr>
+<td>testPrograms.SubmitOrderTest@3daf7722</td></tr>
+<tr>
+<td title='testPrograms.SubmitOrderTest.submiteOrder()'><b>submiteOrder</b><br>Test class: testPrograms.SubmitOrderTest<br>Parameters: {password=Sbg@2023, product=ZARA COAT 3, email=shiva.swami88@gmail.com}</td>
+<td></td>
+<td>62</td>
+<td>testPrograms.SubmitOrderTest@3daf7722</td></tr>
+<tr>
+<td title='testPrograms.SubmitOrderTest.submiteOrder()'><b>submiteOrder</b><br>Test class: testPrograms.SubmitOrderTest<br>Parameters: {password=Sbg@2023, product=ADIDAS ORIGINAL, email=shiva.swami88@gmail.com}</td>
+<td></td>
+<td>16</td>
+<td>testPrograms.SubmitOrderTest@3daf7722</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -123,12 +147,8 @@ function toggleAllBoxes() {
 <td title='testPrograms.ErrorValidationsTest.LoginApplication()'><b>LoginApplication</b><br>Test class: testPrograms.ErrorValidationsTest</td>
 <td><div><pre>java.lang.AssertionError: null
 	at testPrograms.ErrorValidationsTest.LoginApplication(ErrorValidationsTest.java:21)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace896139995", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace896139995'><pre>java.lang.AssertionError: null
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1641565704", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1641565704'><pre>java.lang.AssertionError: null
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.assertNotEquals(Assert.java:1157)
 	at org.testng.Assert.assertNotEquals(Assert.java:1162)
@@ -146,16 +166,21 @@ function toggleAllBoxes() {
 	at org.testng.TestRunner.privateRun(TestRunner.java:648)
 	at org.testng.TestRunner.run(TestRunner.java:505)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>1</td>
-<td>testPrograms.ErrorValidationsTest@c260bdc</td></tr>
+<td>testPrograms.ErrorValidationsTest@5f354bcf</td></tr>
 </table><p>
 </body>
 </html>
