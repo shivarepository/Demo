@@ -1,0 +1,3 @@
+set projectLocation=F:\Demo Projects\SeleniumFrameworkDesign\testSuites
+cd %projectLocation%
+mvn clean test -DxmlFilePath=src/main/java/testSuites/testng.xml

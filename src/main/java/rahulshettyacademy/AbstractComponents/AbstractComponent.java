@@ -3,6 +3,7 @@ package rahulshettyacademy.AbstractComponents;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriver.Timeouts;
 import org.openqa.selenium.WebElement;
@@ -44,6 +45,7 @@ public class AbstractComponent {
 	{
 		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.invisibilityOf(ele));
+		
 	}
 	
 	public CartPage gotoCartPage()

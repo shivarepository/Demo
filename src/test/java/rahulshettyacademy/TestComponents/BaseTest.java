@@ -21,7 +21,7 @@ import org.testng.annotations.BeforeMethod;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+
 import rahulshettyacademy.pageobjects.LandingPage;
 
 public class BaseTest  {
@@ -35,6 +35,7 @@ public class BaseTest  {
 		FileInputStream(System.getProperty("user.dir")+"//src//main//java//rahulshettyacademy//resources//GlobalData.properties");
 		prop.load(fis);
 		
+	//	String path = "F:\\Soft\\chromedriver.exe";
 		/*
 		 * String path = "F:\\Soft\\chromedriver.exe";
 		 * System.setProperty("webdriver.chrome.driver", path); ChromeOptions options =

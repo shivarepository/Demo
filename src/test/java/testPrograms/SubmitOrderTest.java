@@ -20,7 +20,6 @@ import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import rahulshettyacademy.TestComponents.BaseTest;
 import rahulshettyacademy.pageobjects.CartPage;
 import rahulshettyacademy.pageobjects.CheckOutPage;
@@ -35,7 +34,7 @@ public class SubmitOrderTest extends BaseTest{
 	@Test(dataProvider="getData",groups= {"purchaseOrder"}) 
 		public void submiteOrder(HashMap<String,String> input) throws IOException		
 	{	
-		WebDriverManager.chromedriver().setup();	
+	//	WebDriverManager.chromedriver().setup();	
 		ProductCatalogue productCatalogue = landingpage.LoginApplication(input.get("email"), input.get("password")); 		
 		List<WebElement> products = productCatalogue.getProductList();
 		productCatalogue.addProductToCart(input.get("product"));		
@@ -47,6 +46,8 @@ public class SubmitOrderTest extends BaseTest{
 		OrderConfirmationPage orderconfirmationpage = checkoutpage.placeOrder();
 		String ConfirmMessage = orderconfirmationpage.getconfirmationMessage();		
 		Assert.assertTrue(ConfirmMessage.equalsIgnoreCase("Thankyou for the order."));
+		
+		
 	}
 	
 	@Test(dependsOnMethods = {"submiteOrder"})
