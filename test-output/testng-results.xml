@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="1" total="7" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-09-18T22:43:20 IST" name="Suite" finished-at="2023-09-18T22:43:54 IST" duration-ms="33787">
+    <groups>
+      <group name="Smoke">
+        <method signature="SubmitTest.OrangeHRMS_LoginPage()[pri:0, instance:orangeHRMS.Tests.SubmitTest@51acdf2e]" name="OrangeHRMS_LoginPage" class="orangeHRMS.Tests.SubmitTest"/>
+        <method signature="SubmitTest.OrangeHRMS_OpenPIMPage_AddEmployee(java.lang.String,java.lang.String)[pri:0, instance:orangeHRMS.Tests.SubmitTest@51acdf2e]" name="OrangeHRMS_OpenPIMPage_AddEmployee" class="orangeHRMS.Tests.SubmitTest"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test started-at="2023-09-18T22:43:20 IST" name="Test" finished-at="2023-09-18T22:43:54 IST" duration-ms="33787">
+      <class name="orangeHRMS.Tests.SubmitTest">
+        <test-method is-config="true" signature="LaunchApp()[pri:0, instance:orangeHRMS.Tests.SubmitTest@51acdf2e]" started-at="2023-09-18T22:43:20 IST" name="LaunchApp" finished-at="2023-09-18T22:43:31 IST" duration-ms="10681" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApp -->
+        <test-method signature="OrangeHRMS_LoginPage()[pri:0, instance:orangeHRMS.Tests.SubmitTest@51acdf2e]" started-at="2023-09-18T22:43:31 IST" name="OrangeHRMS_LoginPage" finished-at="2023-09-18T22:43:32 IST" duration-ms="1018" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OrangeHRMS_LoginPage -->
+        <test-method signature="OrangeHRMS_OpenPIMPage_AddEmployee(java.lang.String,java.lang.String)[pri:0, instance:orangeHRMS.Tests.SubmitTest@51acdf2e]" started-at="2023-09-18T22:43:34 IST" name="OrangeHRMS_OpenPIMPage_AddEmployee" data-provider="getInputData" finished-at="2023-09-18T22:43:39 IST" depends-on-methods="orangeHRMS.Tests.SubmitTest.OrangeHRMS_LoginPage" duration-ms="4707" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mahesh]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Patil]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OrangeHRMS_OpenPIMPage_AddEmployee -->
+        <test-method signature="OrangeHRMS_OpenPIMPage_AddEmployee(java.lang.String,java.lang.String)[pri:0, instance:orangeHRMS.Tests.SubmitTest@51acdf2e]" started-at="2023-09-18T22:43:39 IST" name="OrangeHRMS_OpenPIMPage_AddEmployee" data-provider="getInputData" finished-at="2023-09-18T22:43:42 IST" depends-on-methods="orangeHRMS.Tests.SubmitTest.OrangeHRMS_LoginPage" duration-ms="3665" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Suresh]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Gowda]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OrangeHRMS_OpenPIMPage_AddEmployee -->
+        <test-method signature="OrangeHRMS_OpenPIMPage_AddEmployee(java.lang.String,java.lang.String)[pri:0, instance:orangeHRMS.Tests.SubmitTest@51acdf2e]" started-at="2023-09-18T22:43:42 IST" name="OrangeHRMS_OpenPIMPage_AddEmployee" data-provider="getInputData" finished-at="2023-09-18T22:43:46 IST" depends-on-methods="orangeHRMS.Tests.SubmitTest.OrangeHRMS_LoginPage" duration-ms="4234" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Rakesh ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Swamy]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OrangeHRMS_OpenPIMPage_AddEmployee -->
+        <test-method signature="OrangeHRMS_OpenPIMPage_AddEmployee(java.lang.String,java.lang.String)[pri:0, instance:orangeHRMS.Tests.SubmitTest@51acdf2e]" started-at="2023-09-18T22:43:46 IST" name="OrangeHRMS_OpenPIMPage_AddEmployee" data-provider="getInputData" finished-at="2023-09-18T22:43:50 IST" depends-on-methods="orangeHRMS.Tests.SubmitTest.OrangeHRMS_LoginPage" duration-ms="3914" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Devanand]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[LM]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OrangeHRMS_OpenPIMPage_AddEmployee -->
+        <test-method signature="OrangeHRMS_OpenPIMPage_AddEmployee(java.lang.String,java.lang.String)[pri:0, instance:orangeHRMS.Tests.SubmitTest@51acdf2e]" started-at="2023-09-18T22:43:50 IST" name="OrangeHRMS_OpenPIMPage_AddEmployee" data-provider="getInputData" finished-at="2023-09-18T22:43:54 IST" depends-on-methods="orangeHRMS.Tests.SubmitTest.OrangeHRMS_LoginPage" duration-ms="3839" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Darshan ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Matha]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OrangeHRMS_OpenPIMPage_AddEmployee -->
+      </class> <!-- orangeHRMS.Tests.SubmitTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

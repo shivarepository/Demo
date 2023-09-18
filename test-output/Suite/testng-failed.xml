@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="testComponents.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="orangeHRMS.Tests.SubmitTest">
+        <methods>
+          <include name="OrangeHRMS_LoginPage"/>
+          <include name="tearDown"/>
+          <include name="LaunchApp"/>
+          <include name="OrangeHRMS_OpenPIMPage_SearchEmployee"/>
+          <include name="OrangeHRMS_OpenPIMPage_AddEmployee"/>
+        </methods>
+      </class> <!-- orangeHRMS.Tests.SubmitTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
